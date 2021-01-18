@@ -1,0 +1,53 @@
+
+.home__design{
+    background-color: cornflowerblue;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    h1{
+        text-align: center;
+        font-size: 4.25rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: white;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 14em;
+            height: 0.5rem;
+            background-color: crimson;
+            display: block;
+            left: 27%;
+          
+        }
+    }
+    .home__images{
+       
+      
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-around;
+        // overflow: hidden;
+        .slide{
+            width: 100%;
+            
+            margin-right: 2rem;
+           
+
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 2rem;
+            object-fit: cover;
+            animation: keepmoving 2s linear infinite;
+        }
+    }
+}
+@keyframes keepmovings{
+    from{
+        padding-left: 40px;
+    }
+    to{
+        padding-right: 40px;
+    }
+}

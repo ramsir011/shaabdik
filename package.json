@@ -1,0 +1,19 @@
+{
+  "name": "shaabdik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "dart-sass sass:css --watch",
+    "server": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp-dart-sass": "^1.0.2",
+    "live-server": "^1.2.1",
+    "livereload-js": "^3.3.1"
+  },
+  "dependencies": {}
+}

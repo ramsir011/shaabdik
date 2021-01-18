@@ -1,0 +1,100 @@
+
+.features{
+    position: relative;
+    background-color: rgba(207, 255, 205, 0.589);
+    padding: 2rem;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-around;
+    margin: 4rem 0;
+    
+    &__house{
+        flex-basis: 50%;
+       
+        img{
+            width: 100%;
+            height: auto;
+           object-fit: cover;
+
+        }
+        
+    }
+    .feature__lists{
+        background-color: rgba(226, 238, 175, 0.692);
+        padding: 1rem;
+        ul > ul{
+        
+            color:rgba(0, 0, 0, 0.719);
+            border-left: 0.1875em solid red;
+            padding-left: 0.25em;
+            margin-left: 0.25em;
+            font-size: 2rem;
+            li{
+                font-size: small;
+                line-height: 2rem;
+            }
+        }
+       
+        ul{
+          
+            padding: 1rem;
+            line-height: 3rem;
+            li{
+                font-size: 1.5rem;
+                list-style: none;
+               
+                font-weight: normal;
+                padding: 0;
+            }
+            
+        }
+
+     }
+     p{
+       color: rgba(39, 21, 16, 0.918);
+       margin-top: 2rem;
+        
+         &::before{
+             content: '';
+             position: absolute;
+             width: 20rem;
+             background-color: chocolate;
+             height: 0.2rem;
+             display: block;
+             top: 73%;
+         }
+         &::after{
+             content: '';
+             position: absolute;
+             width: 20rem;
+             background-color: rgb(151, 70, 12);
+             height: 0.2rem;
+             display: block;
+             bottom: 19%;
+         }
+         
+     }
+     button{
+        margin-top: 3rem;
+        margin-left: 3rem;
+        background-color: rgba(117, 162, 245, 0.561);
+        outline: none;
+        border: none;
+        padding: 1rem;
+        color: blue;
+        border-radius: 20px;
+        width: 75%;
+        text-transform: uppercase;
+        font-weight: 900;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.05);
+            background-color: yellowgreen;
+            ;
+            color: black;
+        }
+      
+       
+    }
+}

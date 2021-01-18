@@ -1,0 +1,48 @@
+.manager__director{
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+    background-color: cadetblue;
+    padding: 2rem;
+    .full__information{
+        position: relative;
+        width: 20%;
+          height: auto;
+        background-color: chartreuse;
+        padding: 2rem;
+     
+        img{
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            clip-path: circle();
+            background-position: center;
+            object-fit: cover;
+            margin-bottom: 2rem;
+            top: -30%;
+            left: 30%;
+        }
+         .detail{
+             text-align: center;
+             margin-top: 10rem;
+             h3{
+                 font-size: 2rem;
+                 color: orange;
+                 &::after{
+                     content: '';
+                     width: 8rem;
+                     height: 0.5rem;
+                     background-color: brown;
+                     display: block;
+                     position: absolute;
+                     left: 23%;
+                     right: 2%;
+                     display: inline;
+                     background-position: center;
+                 }
+             }
+         }
+    }
+}
